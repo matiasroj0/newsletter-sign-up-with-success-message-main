@@ -1,0 +1,257 @@
+:root {
+    /* primary */
+    --tomato: hsl(4, 100%, 67%);
+    /* neutral */
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+
+    --error: #eb5957;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--charcoal-grey);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+.card {
+    background-color: var(--white);
+    display: flex;
+    max-width: 47rem;
+    border-radius: 2rem;
+    padding-right: 1rem;
+}
+
+.card-form {
+    padding: 2rem;
+    flex: 1;
+}
+
+.card-form h1 {
+    font-size: 2.5rem;
+    color: var(--dark-slate-grey);
+    padding-bottom: .5rem;
+}
+
+.card-form p {
+    padding-bottom: 1.4rem;
+}
+
+.list {
+    padding-bottom: 2.6rem;
+}
+
+.list-item {
+    display: flex;
+    gap: .5rem;    
+    padding-bottom: .7rem;
+}
+
+li {
+    font-size: .8rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    padding-bottom: .5rem;
+}
+
+.required-error {
+    color: var(--error);
+}
+
+.form input, button {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 5px;
+}
+
+.form input {
+    border: 1px solid rgb(206, 205, 205);
+}
+
+.form input:focus {
+    outline: 1px solid rgba(0, 0, 0, .5);
+}
+
+.email-error {
+    color: var(--error);
+    background-color: #ecd1cf;
+    outline: 1px solid red;
+    border: 1px solid red;
+}
+
+.email-error:focus {
+    outline: 1px solid red;
+    border: 1px solid red;
+}
+
+.email-error::placeholder {
+    color: #eb5957;
+}
+
+.btn {
+    background: var(--dark-slate-grey);    
+    border: 0;
+    color: var(--white);
+    font-size: .8rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, rgba(187,75,118,1) 8%, rgba(255,98,87,1) 50%);
+    box-shadow: 0px 15px 20px rgba(187,75,118,0.4);
+}
+
+.card-img-container {
+    width: 50%;
+    padding: 1rem;
+}
+
+.sign-up-illustration-desktop {
+    height: 100%;
+}
+
+.sign-up-illustration-mobile {
+    display: none;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.success img {
+    width: 3rem;
+    padding-bottom: 1.2rem;
+}
+
+.success h2 {
+    color: var(--dark-slate-grey);
+    font-size: 2.4rem;
+    line-height: 1;
+    padding-bottom: 1.2rem;
+}
+
+.success p {
+    font-size: .8rem;
+    padding-bottom: 1.5rem;
+}
+
+.success span {
+    color: var(--dark-slate-grey);
+    font-weight: 700;
+}
+
+.invisible {
+    display: none;
+}
+
+@media (max-width:701px) {
+    
+    body {
+        padding: 0;
+    }
+    
+    .card {
+        padding: 0;
+        height: 100%;
+        border-radius: 0;
+    }
+    
+    .card-form {
+        padding: 0;
+    }
+    
+    .card-form > * {
+        padding: 1rem;
+    }
+
+    .card-img-container {
+        display: none;
+    }
+
+    .mobile-img-container {
+        padding: 0;
+    }
+    
+    .sign-up-illustration-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .success {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .success img {
+        padding-bottom: 2.5rem;
+    }
+
+    .success h2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .success p {
+        font-size: 1rem;
+        padding-bottom: 13rem;
+    }
+    
+}
+
