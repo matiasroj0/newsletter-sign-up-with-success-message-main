@@ -4,7 +4,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Live Site URL: https://extraordinary-lollipop-e20558.netlify.app/
+- Live Site URL: https://matiasrojo-newsletter-signup-form.netlify.app/
 
 ### Screenshot
 
